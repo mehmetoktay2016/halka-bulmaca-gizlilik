@@ -36,10 +36,10 @@
 <body>
 <main>
   <h1>Halka Bulmaca Gizlilik Politikası</h1>
-  <p class="date">Son güncelleme: 27 Ekim 2026</p>
+  <p class="date">Son güncelleme: 28 Ekim 2026</p>
 
   <div class="summary">
-    <p><strong>Kısaca:</strong> Halka Bulmaca ad, e-posta, konum gibi kişisel bilgi toplamaz ve reklam göstermez. Oyunu geliştirmek için yalnızca anonim oyun istatistikleri (hangi bölümün başlayıp bittiği gibi) Google Firebase Analytics ile ölçülür.</p>
+    <p><strong>Kısaca:</strong> Halka Bulmaca ad, e-posta, konum gibi kişisel bilgi toplamaz ve reklam göstermez. Oyunu geliştirmek için yalnızca anonim oyun istatistikleri (hangi bölümün başlayıp bittiği gibi) Google Firebase Analytics ile ölçülür ve aynı istatistikler kendi veritabanımızda (Supabase) da tutulur.</p>
   </div>
 
   <h2>Toplanan veriler</h2>
@@ -52,12 +52,21 @@
   </ul>
   <p>Bu bilgiler sizi kişi olarak tanımlamaz; reklam, satış ya da profil çıkarma için kullanılmaz. Yalnızca oyunun hangi bölümlerde zorlandığını ve oyuncuların geri gelip gelmediğini görmek için toplu olarak incelenir. Veriler Google'ın sunucularında işlenir ve Google Analytics ayarlarına göre en çok 14 ay saklanır. Google'ın veri işleyişi: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. Tarayıcı sürümü hiçbir veri göndermez.</p>
 
+  <h2>Kendi veritabanımız (Supabase)</h2>
+  <p>Android uygulaması, yukarıdaki <strong>oyun olaylarının aynısını</strong> bölüm zorluğunu ayarlamak ve oyuncuların hangi bölümde oyunu bıraktığını görmek için kendi veritabanımıza da gönderir. Veritabanı <strong>Supabase</strong> hizmetinde, <strong>Londra (Birleşik Krallık)</strong> bölgesindeki sunucularda tutulur. Her olayla birlikte şunlar gider:</p>
+  <ul>
+    <li>oyunun cihazınızda ürettiği <strong>rastgele bir oyuncu kimliği</strong> ve oturum kimliği (adınız, cihaz kimliğiniz ya da reklam kimliğinizle bağlantısı yoktur);</li>
+    <li>olayın zamanı, uygulama sürümü, platform (Android) ve oyunun dili.</li>
+  </ul>
+  <p>İnternet bağlantısı yokken olaylar cihazınızda bekletilir ve bağlantı gelince gönderilir. <strong>IP adresiniz kaydedilmez:</strong> kötüye kullanımı (sahte veri gönderimini) sınırlamak için yalnızca geri çevrilemez bir özeti en çok bir saat bir sayaçta tutulur; Supabase'in sunucu kayıtları güvenlik amacıyla adresi kısa bir süre saklayabilir. Veriler yalnızca geliştiricinin erişebildiği, girişle korunan bir veritabanındadır; satılmaz, reklam ya da profil çıkarma için kullanılmaz ve oyunu geliştirmek için gerektiği sürece saklanır. Supabase'in veri işleyişi: <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</p>
+  <p>Uygulamayı silerseniz oyuncu kimliği de cihazınızdan silinir; yeniden kurduğunuzda yeni bir kimlik oluşur ve eski kayıtlar sizinle ilişkilendirilemez. Verilerinizin silinmesini isterseniz aşağıdaki iletişim adresinden bize yazabilirsiniz.</p>
+
   <h2>Cihazınızda saklanan bilgiler</h2>
   <p>Oyun ilerlemeniz (açılan seviyeler, yıldızlar, altınlar, skor) ve ses ayarı yalnızca <strong>kendi cihazınızda</strong> saklanır. Kaydın kendisi bize ya da üçüncü taraflara gönderilmez. Uygulamayı silerseniz bu bilgiler de silinir.</p>
   <p>Android'in kendi yedekleme özelliği açıksa, cihaz yedeğiniz Google hesabınıza alınırken oyun ilerlemesi de bu yedeğe dahil olabilir. Bu yedekleme Google tarafından, sizin hesap ayarlarınıza göre yapılır.</p>
 
   <h2>İzinler</h2>
-  <p>Uygulama, bir halka serbest kaldığında kısa bir titreşim verebilmek için <strong>titreşim</strong> iznini ve anonim istatistikleri gönderebilmek için <strong>internet</strong> iznini kullanır.</p>
+  <p>Uygulama, bir halka serbest kaldığında kısa bir titreşim verebilmek için <strong>titreşim</strong> iznini ve anonim istatistikleri (Firebase ve Supabase) gönderebilmek için <strong>internet</strong> iznini kullanır.</p>
 
   <h2>Reklam ve uygulama içi satın alma</h2>
   <p>Oyunda reklam ve uygulama içi satın alma yoktur.</p>
@@ -74,11 +83,12 @@
   <hr>
 
   <h1>Halka Bulmaca Privacy Policy</h1>
-  <p class="date">Last updated: October 27, 2026</p>
+  <p class="date">Last updated: October 28, 2026</p>
   <p><strong>Halka Bulmaca does not collect personal information such as your name, email, phone number, precise location or advertising ID, and shows no ads.</strong> No account is required.</p>
   <p>To improve the game, the Android app measures anonymous statistics with <strong>Google Firebase Analytics</strong>: game events (level started, completed or out of moves, stars and moves, hint and extra-move use, tutorial completed, challenges, in-game coins earned and spent, settings changes such as sound, slot, colorblind mode and language), usage (app opens, session length, a random app instance ID) and general device information (device model, Android version, language and country-level approximate location). This data does not identify you, is not used for advertising, sale or profiling, and is only reviewed in aggregate. It is processed on Google servers and kept for up to 14 months under Google Analytics settings. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. The browser version sends no data.</p>
+  <p><strong>Our own database (Supabase).</strong> The Android app also sends <strong>the same game events</strong> to our own database so we can tune level difficulty and see where players stop playing. The database is hosted by <strong>Supabase</strong> on servers in <strong>London (United Kingdom)</strong>. Each event includes a <strong>random player ID</strong> and session ID generated by the game on your device (not linked to your name, device ID or advertising ID), the event time, app version, platform (Android) and game language. Events are kept on your device while you are offline and sent when a connection is available. <strong>Your IP address is not stored:</strong> to limit abuse (fake data), only an irreversible hash of it is kept in a counter for at most one hour; Supabase's server logs may keep the address briefly for security. The data sits in a login-protected database that only the developer can access; it is not sold or used for advertising or profiling, and it is kept for as long as it is needed to improve the game. See <a href="https://supabase.com/privacy">supabase.com/privacy</a>. Uninstalling the app removes the player ID from your device; a reinstall creates a new one and old records can no longer be linked to you. To ask for your data to be deleted, contact us at the address below.</p>
   <p>Your game progress (unlocked levels, stars, coins, score) and sound setting are stored only on your own device; the save itself is never sent to us or to third parties. Uninstalling the app removes them. If Android device backup is enabled, this progress may be included in your device backup, which is handled by Google according to your account settings.</p>
-  <p>The app uses the vibration permission for a short vibration when a ring is released, and the internet permission to send anonymous statistics. There are no in-app purchases. The game is not directed at children under 13. Changes to this policy will be published on this page.</p>
+  <p>The app uses the vibration permission for a short vibration when a ring is released, and the internet permission to send anonymous statistics (Firebase and Supabase). There are no in-app purchases. The game is not directed at children under 13. Changes to this policy will be published on this page.</p>
   <p>Contact: <a href="https://github.com/mehmetoktay2016/halka-bulmaca-gizlilik/issues">github.com/mehmetoktay2016/halka-bulmaca-gizlilik</a></p>
 </main>
 </body>
